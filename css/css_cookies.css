@@ -1,0 +1,65 @@
+/* cookie styles */
+.cookie {
+  background-color: var(--c-cookie-color);
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border: 1px solid var(--c-chip-color);
+  border-radius: 50%;
+  transition: all .1s;
+  animation-name: cookie-path;
+  animation-duration: 1.5s;
+  animation-fill-mode: forward;
+  animation-timing-function: ease;
+}
+
+.chip {
+  background-color: var(--c-chip-color);
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  transition: all .1s;
+}
+
+.cookie .chip:nth-of-type(1) {
+  top: 25px;
+  left: 35px;
+}
+
+.cookie .chip:nth-of-type(2) {
+  top: 15px;
+  left: 95px;
+}
+
+.cookie .chip:nth-of-type(3) {
+  top: 100px;
+  left: 40px;
+}
+
+.cookie .chip:nth-of-type(4) {
+  top: 85px;
+  left: 95px;
+}
+
+@keyframes cookie-path {
+  0% {
+    opacity: 1;
+    transform: scale(.75, .4);
+  }
+  10% {
+    transform: scale(1);
+    transform: translateY(-10rem);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  50% {
+    /* transform: translateY(30rem); */
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(70rem);
+    opacity: 0;
+  }
+}

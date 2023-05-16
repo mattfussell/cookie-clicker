@@ -1,0 +1,21 @@
+.btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--c-med-brown);
+  background: var(--c-tan-lite);
+  padding: 1em 1.5em;
+  border: 2px solid var(--c-med-brown);
+  border-radius: .5em;
+  z-index: 2;
+  transition: all .1s;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  color: var(--c-tan);
+  border: 2px solid var(--c-tan);
+  transform: scale(.95);
+}
